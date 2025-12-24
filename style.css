@@ -16,7 +16,6 @@ body {
   flex-direction: column;
   height: 100vh;
   margin: 0;
-  overflow: hidden;
   font-family: Roboto, sans-serif;
   color: white;
 }
@@ -32,18 +31,99 @@ a {
     color: white;
 }
 
+.header-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .header {
     display: flex;
-    justify-content: space-around;
     background-color: #1f2937;
+    align-items: center;
 }
 
 .right-links, .logo {
     display: flex;
     gap: 20px;
-    margin: 15px;
+    font-size: 18px;   
 }
+
 
 .logo {
     font-weight: bold;
+}
+
+button {
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 8px;
+  
+}
+
+button.signup {
+  background: royalblue;
+  border: 1px solid royalblue;
+  color: white;
+  align-self: flex-start;
+  margin-top: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 48px;
+    
+}
+
+.main-containers {
+    display: flex;
+    background-color: #1f2937;
+    /* border: solid orange 2px; */
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.title-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #1f2937;
+    width: 420px;
+    height: auto;
+    /* border: solid 2px red; */
+}
+
+img {
+    width: 550px;
+    height: 250px;
+    max-width: 100%;
+}
+
+.header, .main-containers {
+    max-width: 100%;
+    justify-content: space-between;
+}
+
+.right-links, 
+.logo, 
+.title-card {
+    margin-left: 400px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex-shrink: 0;
+}
+
+.right-links,
+.image {
+    margin-right: 400px;
+}
+
+.image {
+    display: flex;
+    flex-shrink: 0;
+}
+
+.text-container {
+    width: 400px;
 }
