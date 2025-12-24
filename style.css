@@ -214,10 +214,14 @@ img {
     align-items: center;
     background-color: #3882f6;
     border-radius: 8px;
-    margin-top: 70px;
+    /* margin-top: 70px;
     margin-bottom: 70px;
     margin-left: 300px;
-    margin-right: 300px;
+    margin-right: 300px; */
+    margin: 70px auto; 
+    width: 100%;        
+    max-width: 800px;  
+    padding: 10px;
 }
 
 .cta-container {
